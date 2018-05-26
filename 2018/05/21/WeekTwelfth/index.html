@@ -110,7 +110,7 @@
 <meta property="og:site_name" content="jlq&#39;s Blog">
 <meta property="og:description" content="Monday 2018.5.21 神奇 新的东西感觉很神奇 谷歌地图以前竟然这么强大 终于学了传说中的ajax，看视频说的也不难嘛，内容也不多 php竟然是用C语言写的，比起js，它可以精准的判断变量的类型，多了个资源类型 Vue是真的神奇，JS的核心就是DOM操作，Vue就完全不用对DOM进行操作，而是对数据进行操作间接地修改元素属性，双向数据绑定也是不得不服。 今晚风异常地大..  Thurs">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-24T13:25:07.075Z">
+<meta property="og:updated_time" content="2018-05-26T11:49:51.558Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WeekTwelfth">
 <meta name="twitter:description" content="Monday 2018.5.21 神奇 新的东西感觉很神奇 谷歌地图以前竟然这么强大 终于学了传说中的ajax，看视频说的也不难嘛，内容也不多 php竟然是用C语言写的，比起js，它可以精准的判断变量的类型，多了个资源类型 Vue是真的神奇，JS的核心就是DOM操作，Vue就完全不用对DOM进行操作，而是对数据进行操作间接地修改元素属性，双向数据绑定也是不得不服。 今晚风异常地大..  Thurs">
@@ -362,7 +362,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-24 21:25:07" itemprop="dateModified" datetime="2018-05-24T21:25:07+08:00">2018-05-24</time>
+                <time title="修改时间：2018-05-26 19:49:51" itemprop="dateModified" datetime="2018-05-26T19:49:51+08:00">2018-05-26</time>
               
             
           </span>
@@ -420,6 +420,18 @@
 <li>现在又冒出来个webpack,那就先把这个学了吧</li>
 <li>要学的还有很多..</li>
 <li>不知不觉又要到周末了..</li>
+</ul>
+<h1 id="Saturday"><a href="#Saturday" class="headerlink" title="Saturday"></a>Saturday</h1><ul>
+<li>这个星期不实训= =</li>
+<li>今天大概是来得最早的一天了，前面竟然一个人都没有</li>
+<li>vue-cli vue-router的教程都跟到看完了</li>
+<li>实战是一个POS收银系统，视频只说了一部分功能</li>
+<li>然而我却写了一下午..途中碰到一个坑:<br><p>视频里面直接给的一个php脚本应该是老师服务器上的，每个人都可以访问。我就想尝试用自己的mysql数据库存数据，然后用PHP转换为对象数组，直接传给vue对象。这个时候不得不用wamp了，不然php文件不能运行，wamp就占用8080端口了。测试vue又要一个端口，它就自觉的用8082端口了。在vue里面用axios链接php脚本的时候有问题了，百度了是跨域的问题，解决方法是在PHP脚本里面加上：</p><br><p>header(‘Access-Control-Allow-Origin: *’);</p><br><p>header(‘Access-Control-Allow-Methods: POST,GET,OPTIONS’);</p><br><p>header(‘Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept’);</p><br><p>用php把mysql表里面的数据转换为对象数组的时候，源代码：</p><br><p>echo $str=json_encode($jarr);</p><br><p>中文显示不出来，显示的是/u之类的，然后改成了</p><br><p>echo $str=json_encode($jarr,JSON_UNESCAPED_UNICODE);</p><br><p>后面那个参数就是/u的内容转化为中文</p></li>
+<li>用了差不多一个星期把vue的全家桶了解了，感觉还不会用，还是要多练 = =</li>
+<li>视频里面提到了ES6，后面要看一下了</li>
+<li>POS用到了Vue+Webpack+Element+Axios+vueRouter，还想传上去的..文件有点大= =而且只能在我这台电脑运行..</li>
+<li>PHP,ES6,webpack,less,jquery插件..</li>
+<li>路还很长..</li>
 </ul>
 
       
@@ -618,7 +630,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Monday-2018-5-21"><span class="nav-number">1.</span> <span class="nav-text">Monday 2018.5.21</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Thursday"><span class="nav-number">2.</span> <span class="nav-text">Thursday</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Monday-2018-5-21"><span class="nav-number">1.</span> <span class="nav-text">Monday 2018.5.21</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Thursday"><span class="nav-number">2.</span> <span class="nav-text">Thursday</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Saturday"><span class="nav-number">3.</span> <span class="nav-text">Saturday</span></a></li></ol></div>
             
 
           </div>
