@@ -14,16 +14,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
-<script>
-    (function(){
-        if(''){
-            if (prompt('主人设置了密码') !== ''){
-                alert('密码错误！');
-                history.back();
-            }
-        }
-    })();
-</script>
+
 
 
 
@@ -113,18 +104,18 @@
 <link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
 
 
-  <meta name="description" content="Monday 2018.5.21">
+  <meta name="description" content="The article has been encrypted, please enter your password to view.">
 <meta name="keywords" content="life">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WeekTwelfth">
 <meta property="og:url" content="http://yoursite.com/2018/05/21/WeekTwelfth/index.html">
 <meta property="og:site_name" content="jlq&#39;s Blog">
-<meta property="og:description" content="Monday 2018.5.21">
+<meta property="og:description" content="The article has been encrypted, please enter your password to view.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-06-21T06:59:38.400Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WeekTwelfth">
-<meta name="twitter:description" content="Monday 2018.5.21">
+<meta name="twitter:description" content="The article has been encrypted, please enter your password to view.">
 
 
 
@@ -417,35 +408,7 @@
       
 
       
-        <h1 id="Monday-2018-5-21"><a href="#Monday-2018-5-21" class="headerlink" title="Monday 2018.5.21"></a>Monday 2018.5.21</h1><a id="more"></a>
-<ul>
-<li>神奇</li>
-<li>新的东西感觉很神奇</li>
-<li>谷歌地图以前竟然这么强大</li>
-<li>终于学了传说中的ajax，看视频说的也不难嘛，内容也不多</li>
-<li>php竟然是用C语言写的，比起js，它可以精准的判断变量的类型，多了个资源类型</li>
-<li>Vue是真的神奇，JS的核心就是DOM操作，Vue就完全不用对DOM进行操作，而是对数据进行操作间接地修改元素属性，双向数据绑定也是不得不服。</li>
-<li>今晚风异常地大..</li>
-</ul>
-<h1 id="Thursday"><a href="#Thursday" class="headerlink" title="Thursday"></a>Thursday</h1><ul>
-<li>看了两天Vue框架的基础，感觉有点迷..</li>
-<li>现在又冒出来个webpack,那就先把这个学了吧</li>
-<li>要学的还有很多..</li>
-<li>不知不觉又要到周末了..</li>
-</ul>
-<h1 id="Saturday"><a href="#Saturday" class="headerlink" title="Saturday"></a>Saturday</h1><ul>
-<li>这个星期不实训= =</li>
-<li>今天大概是来得最早的一天了，前面竟然一个人都没有</li>
-<li>vue-cli vue-router的教程都跟到看完了</li>
-<li>实战是一个POS收银系统，视频只说了一部分功能</li>
-<li>然而我却写了一下午..途中碰到一个坑:<br><p>视频里面直接给的一个php脚本应该是老师服务器上的，每个人都可以访问。我就想尝试用自己的mysql数据库存数据，然后用PHP转换为对象数组，直接传给vue对象。这个时候不得不用wamp了，不然php文件不能运行，wamp就占用8080端口了。测试vue又要一个端口，它就自觉的用8082端口了。在vue里面用axios链接php脚本的时候有问题了，百度了是跨域的问题，解决方法是在PHP脚本里面加上：</p><br><p>header(‘Access-Control-Allow-Origin: *’);</p><br><p>header(‘Access-Control-Allow-Methods: POST,GET,OPTIONS’);</p><br><p>header(‘Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept’);</p><br><p>用php把mysql表里面的数据转换为对象数组的时候，源代码：</p><br><p>echo $str=json_encode($jarr);</p><br><p>中文显示不出来，显示的是/u之类的，然后改成了</p><br><p>echo $str=json_encode($jarr,JSON_UNESCAPED_UNICODE);</p><br><p>后面那个参数就是/u的内容转化为中文</p></li>
-<li>用了差不多一个星期把vue的全家桶了解了，感觉还不会用，还是要多练 = =</li>
-<li>视频里面提到了ES6，后面要看一下了</li>
-<li>POS用到了Vue+Webpack+Element+Axios+vueRouter，还想传上去的..文件有点大= =而且只能在我这台电脑运行..</li>
-<li>PHP,ES6,webpack,less,jquery插件..</li>
-<li>路还很长..</li>
-</ul>
-
+        <script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">Please enter the password to read the blog.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> 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 </div>
       
     </div>
 
@@ -649,7 +612,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Monday-2018-5-21"><span class="nav-number">1.</span> <span class="nav-text">Monday 2018.5.21</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Thursday"><span class="nav-number">2.</span> <span class="nav-text">Thursday</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Saturday"><span class="nav-number">3.</span> <span class="nav-text">Saturday</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#encrypt-message"><span class="nav-number">1.</span> <span class="nav-text">Please enter the password to read the blog.</span></a></li></ol></div>
             
 
           </div>
@@ -699,7 +662,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">本站共2.1k字</span>
+  <span class="post-count">本站共1.3k字</span>
 </div>
         
 
